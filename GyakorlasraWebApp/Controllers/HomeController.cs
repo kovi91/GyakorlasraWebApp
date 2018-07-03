@@ -14,6 +14,7 @@ namespace GyakorlasraWebApp.Controllers
         ICharacterRepository _repo;
         public HomeController(ICharacterRepository repo)
         {
+
             _repo = repo;
         }
         public IActionResult Index()
