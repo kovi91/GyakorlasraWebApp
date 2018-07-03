@@ -1,3 +1,33 @@
-﻿<h1>
-    Index oldal
-</h1>
+﻿@model IEnumerable<GyakorlasraWebApp.Models.CharacterModel>
+<div class="card-columns">
+    @foreach (var item in Model)
+    {
+        string format = "";
+        @if (item.Side == GyakorlasraWebApp.Models.CharacterSide.good)
+        {
+            format = "card text-white bg-dark mb-3";
+        }
+        else
+        {
+            format = "card text-white bg-dark mb-3";
+        }
+        <div class="@format">
+            <img class="card-img-top" src="~/HeroImages/@item.ImageUrl" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <p class="card-text">@item.Description</p>
+            </div>
+            <div class="card-footer">
+                @*<small class="text-muted">Last updated 3 mins ago</small>*@
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: @item.Power.ToString()%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br />
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: @item.Speed.ToString()%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

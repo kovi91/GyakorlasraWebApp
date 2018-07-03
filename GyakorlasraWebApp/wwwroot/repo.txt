@@ -1,0 +1,7 @@
+Superman#0#90#80#superman.JPG#Polgári nevén Clark Kent, származása: Kripton bolygó
+Batman#0#50#50#batman.jpg#Bruce Wayne, milliárdos playboy, titokban bűnüldöző denevérember
+Flash#0#20#100#flash.jpg#Barry Allen bűnügyi szakértő, akit megcsapott egy villám és ezért szupergyors
+Wonder woman#0#60#80#wonderwoman.jpg#Themyskria szigetéről származó harci amazon, ősi fegyverekkel
+Magneto#1#20#20#magneto.jpg#Eric Lansher mutáns, aki fémeket tud mozgati az akaratával
+Sauron#1#87#22#sauron.JPG#Középfölde sötét nagyura, az Egy Gyűrű elkészítője, Morgoth szolgája
+White Gandalf#0#42#18#gandalf.JPG#Gandalf egy fehérmágus, aki Középföldén küzd Sauron ellen

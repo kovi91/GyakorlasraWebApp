@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GyakorlasraWebApp.Models.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,6 +16,7 @@ namespace GyakorlasraWebApp
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ICharacterRepository, CharacterMockRepository>();
             services.AddMvc();
         }
 
@@ -27,6 +29,7 @@ namespace GyakorlasraWebApp
             }
 
             app.UseMvcWithDefaultRoute();
+            app.UseStaticFiles();
         }
     }
 }
