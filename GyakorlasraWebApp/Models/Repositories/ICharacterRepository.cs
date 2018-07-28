@@ -10,5 +10,7 @@ namespace GyakorlasraWebApp.Models.Repositories
         IEnumerable<CharacterModel> GetAll();
         void Add(CharacterModel model);
         void Export();
+        CharacterModel GetCharacterById(int id);
+        void ModifyCharacter(CharacterModel model);
     }
 }

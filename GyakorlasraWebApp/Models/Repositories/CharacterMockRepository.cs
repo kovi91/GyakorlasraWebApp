@@ -45,12 +45,24 @@ namespace GyakorlasraWebApp.Models.Repositories
 
         public IEnumerable<CharacterModel> GetAll()
         {
-            return repo;
+            return repo.OrderBy(x => x.Id);
         }
 
         public void Add(CharacterModel model)
         {
             model.Id = repo.Count;
+            repo.Add(model);
+        }
+
+        public CharacterModel GetCharacterById(int id)
+        {
+            return repo.SingleOrDefault(x => x.Id == id);
+        }
+
+        public void ModifyCharacter(CharacterModel model)
+        {
+            var oldModel = this.GetCharacterById(model.Id);
+            repo.Remove(oldModel);
             repo.Add(model);
         }
     }

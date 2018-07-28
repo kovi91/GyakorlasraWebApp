@@ -1,0 +1,79 @@
+﻿@model GyakorlasraWebApp.Models.CharacterModel
+
+
+<h2>Customize Your Hero</h2>
+
+
+@using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+{
+    <div class="form-group row">
+        <label for="Name" class="col-sm-2 col-form-label">Hero name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Name" value="@Model.Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="Description" name="Description" placeholder="Write something" value="@Model.Description">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Power">Power of your hero</label>
+        <input type="range" class="form-control-range" id="Power" name="Power" value="@Model.Power">
+    </div>
+    <div class="form-group row">
+        <label for="Speed">Speed of your hero</label>
+        <input type="range" class="form-control-range" id="Speed" name="Speed" value="@Model.Speed">
+    </div>
+    <fieldset class="form-group">
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Side</legend>
+            <div class="col-sm-10">
+
+
+                @if (Model.Side == GyakorlasraWebApp.Models.CharacterSide.good)
+                {
+                    <!--Good side-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Side" id="Side" value="0" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Light side
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Side" id="Side" value="1">
+                        <label class="form-check-label" for="gridRadios2">
+                            Dark side
+                        </label>
+                    </div>
+
+                }
+                else
+                {
+                    <!--Evil side-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Side" id="Side" value="0">
+                        <label class="form-check-label" for="gridRadios1">
+                            Light side
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Side" id="Side" value="1" checked>
+                        <label class="form-check-label" for="gridRadios2">
+                            Dark side
+                        </label>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            @Html.HiddenFor(x => x.ImageUrl);
+            <button type="submit" class="btn btn-primary">Save your hero</button>
+        </div>
+    </div>
+}
+

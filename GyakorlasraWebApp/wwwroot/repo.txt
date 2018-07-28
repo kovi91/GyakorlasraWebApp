@@ -2,6 +2,18 @@ Superman#0#90#80#superman.JPG#Polgári nevén Clark Kent, származása: Kripton 
 Batman#0#50#50#batman.jpg#Bruce Wayne, milliárdos playboy, titokban bűnüldöző denevérember
 Flash#0#20#100#flash.jpg#Barry Allen bűnügyi szakértő, akit megcsapott egy villám és ezért szupergyors
 Wonder woman#0#60#80#wonderwoman.jpg#Themyskria szigetéről származó harci amazon, ősi fegyverekkel
-Magneto#1#20#20#magneto.jpg#Eric Lansher mutáns, aki fémeket tud mozgati az akaratával
 Sauron#1#87#22#sauron.JPG#Középfölde sötét nagyura, az Egy Gyűrű elkészítője, Morgoth szolgája
 White Gandalf#0#42#18#gandalf.JPG#Gandalf egy fehérmágus, aki Középföldén küzd Sauron ellen
+Voldemort#1#70#35#voldemort.JPG#J.K. Rowling Harry Potter világának feketemágusa, aki Horcruxokkal törekedett az örök életre
+Green Arrow#0#25#76#arrow.JPG#Oliver Quenn, a zöld íjász egy Batmanhez hasonló gazdag playboy, aki 5 év remeteség után megmenti a városát
+Emperor Palpatine#1#67#29#palpatine.JPG#A Star Wars birodalmának császára, Sith Sötét Nagyura, aki a Köztársaságot rombadöntötte
+Magneto#1#20#20#magneto.jpg#Eric Lensher mutáns, aki fémeket tud mozgati az akaratával
+Black Canary#0#22#56#blackcanary.JPG#Dinah Laurel Lance újságíró, aki Oliver Queen társaként védi Starling City városát
+Supergirl#0#84#87#supergirl.JPG#Kal-El, vagyis Superman unokatestvére, Kara Zor-El, szintén a Krypton bolygóról
+Obi-wan Kenobi#0#58#79#kenobi.JPG#Jedimester, a 66-os parancs két túlélőjének egyike, Anakin és Luke Skywalker mestere
+Thanos#1#98#12#thanos.JPG#Az őrült titán a Marvel-univerzumból, aki kiirtotta a fél galaxist
+Joker#1#3#40#joker.JPG#Gotham City legismertebb bűnözője, Batman legfőbb ellenpontja
+Jean Grey#0#99#42#phoenix.JPG#Az X-men csapat tagja, 5-ös erősségű mutáns, erejét nehezen uralja
+Whichking of Angamar#1#61#71#whichking.JPG#Az Angamar-i boszorkányúr, Mordor seregeinek főparancsnoka, Sauron első ember
+Boba Fett#1#23#68#bobafett.JPG#Fejvadász a Star Wars univerzumból, Jango Fett fia, ritka mandalori páncélt visel
+Deadpool#0#59#89#deadpool.JPG#Polgári nevén Wade Wilson, aki egy beavatkozás során kapta hallhatatlanságát

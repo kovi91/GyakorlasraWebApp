@@ -29,6 +29,19 @@ namespace GyakorlasraWebApp.Controllers
         }
 
         [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            return View(_repo.GetCharacterById(id));
+        }
+
+        [HttpPost]
+        public IActionResult Edit(CharacterModel model)
+        {
+            _repo.ModifyCharacter(model);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
         public IActionResult Add()
         {
             return View();
@@ -54,6 +67,7 @@ namespace GyakorlasraWebApp.Controllers
 
             model.ImageUrl = ff.FileName;
             _repo.Add(model);
+            _repo.Export();
             return RedirectToAction("Index");
         }
 
